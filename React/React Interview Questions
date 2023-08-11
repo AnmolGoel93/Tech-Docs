@@ -1,0 +1,42 @@
+Native Web Components
+What are the most common approaches for styling a React application?
+Control & Uncontrolled Components
+Strict Mode (React.StrictMode)
+why can’t the component directly return multiple elements.
+why do the Component names in JSX start with capital letter
+Error Boundary
+Render Props
+Class based Lifecycle Methods
+Class Components
+Keys
+What are the main 2 types of components you can declare in React, and when would you use one over another
+why do we need to import React from 'react' on the top of the file even if we don’t use React in our code;
+If you wanted a component to perform an action only once when the component initially rendered—e.g., make a web analytics call—how would you achieve this with a class component? And how would you achieve it with a function component?
+how would you go about making sure the data is not re-fetched when the component is re-mounted
+The cycle of mounting a stateful component? What functions are called in what order? Where would you place a request for data from the API? Why? (getDerivedStateFromProps)
+why componentDidMount and not constructor? (“with the new asynchronous rendering in React Fiber …”)
+how would you go about passing data across multiple levels of depth, without passing it from component to component? (Context, function-as-child pattern)
+What is the StrictMode component and why would you use it?
+Pure Functional Components
+React Hooks
+What is prop drilling and how can you avoid it?
+explain the idea of “lifting the state up”?
+State
+Concurrent Rendering
+React.memo
+Pure Components
+Higher-Order Components || HoCs in React? (Redux -> connect)
+Virtual DOM
+Pros & Cons
+Synthetic Events
+Reconcilization
+Portal
+refs
+JSX
+Prop Drilling
+Difference in Props & State
+Functional Components
+Handle Events in React
+Passing Data between Components (Props, Context API, Callbacks, Redux)
+Explain CallStack in React JS
+One Way Data Binding

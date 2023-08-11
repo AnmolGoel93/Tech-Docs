@@ -1,0 +1,55 @@
+Promises - Result Set of promise, Promise.all, Promise.race, Promise.any
+Async Await
+Performance Optimization - Pagination, Scrolling, Memoize / Caching, CDN, Load Balacing, Horizontal & Vertical Scaling
+Callback
+Prototype & Prototype Inheritence
+Recursion
+Design Patterns
+Learning JavaScript Design Patterns by Addy Osmani.
+Proxy & Reverse-Proxy
+Shallow Copy & Deep Copy
+Currying
+yield \*[Symbol.iterator]()
+Closures
+Lexical Environment
+Do we have to use .json() always with fetch function?
+Can async method be called without await? (From 1 method call async)
+If more than one file has written resolve function of the promise, in which order is it called? (Multiple Handlers)
+Event Loop
+Destructing
+Rest & Spread Operator
+Event Bubbling
+Event Capturing
+Event Delegation
+Throttling & Debouncing
+Async IIFE
+Cannot use break or continue in forEach Loop to control the flow
+CORS
+Polyfills
+API Calls
+Higher Order Functions
+Which takes higher precedence if a promise and set-Timeout both are resolved at sametime.
+Concurrency
+What happens when you enter URL in Browser
+Lazy loading JS Modules / Files
+Set-Interval & Set-Timeout
+Array.reverse
+Particular String is Palindrome or Not
+Hoisting
+Temporal Dead Zone
+Difference between var, let, const
+Reduce function in Javascript
+Web Workers
+Service Workers
+Call, Apply, Bind
+For-Await,
+Are Null and Undefined Separate Data Types?,
+CallStack,
+Objects, Arrays and Its Reference
+Sort Method Optimize,
+setTimeout - Added to Call Stack and then passed to WebAPI's and takes sometime to come back even with 0 timeout
+JS Engine Architecture
+Cookies
+Storage(Session, Local)
+Lazy loading
+Module Exports

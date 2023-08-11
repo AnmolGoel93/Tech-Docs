@@ -1,0 +1,25 @@
+JSX - JavaScript XML / JavaScript Extension Syntax
+
+JSX is one of the core concepts of React.
+It is imported as a Part of "react" pacakage that is being added in the project.
+JSX is similar to HTML.
+It Contains JavaScript code as well in the same place with the help of {}
+Babel compiles JSX down to React.createElement() calls.
+  const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};

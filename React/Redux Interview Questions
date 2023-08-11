@@ -1,0 +1,16 @@
+redux-thunk (async action creators)
+useDispatch
+useSelector
+logger
+createStore
+middleware
+mapStateToProps
+mapDispatchToProps
+connect
+composeWithDevTools
+workflow features in Redux
+Differentiate between Relay and Redux
+How to use View in redx to retrieve updated state in Redux and render it again?
+what exactly does the connect function do?
+why should you dispatch an action to update the state and not update the store directly?
+n reducer, why should you return a new object as state and not modify the existing state object?

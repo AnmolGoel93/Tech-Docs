@@ -1,0 +1,10 @@
+caniuse.com
+
+Sample API's =
+=> https://pokeapi.co/api/v2/pokemon/${id}
+=> https://api.github.com/users/${userid}
+=> https://cat-fact.herokuapp.com/facts
+=> https://www.boredapi.com/
+=> https://www.javascripttutorial.net/sample/promise/api.json
+=> https://swapi.dev/api/films
+=> https://gorest.co.in/public/v2/users

@@ -1,0 +1,129 @@
+Create React App without create-react-app
+
+Webpack is also a command-line tool used to create a bundle of assets (files and code).
+It takes all the JS files and other assets, transforming them into one large file.
+Now, this compressed file can be sent to the browser or the server depending on which rendering style you have set up for your website.
+React webpack file is typically configured through a file labeled webpack.config.js.
+This is the place where all the configurations will take place.
+
+1) npm init
+    package.json
+        Holds information about the project
+        What kind of libraries are being used with versions
+
+2) npm i react react-dom
+    Add under dependencies
+
+3) npm i --save--dev webpack webpack-dev-server webpack-cli
+    webpack - combines dependencies code
+    webpack module - Will include all core webpack functionality
+    webpack-dev-server - This server automatically reruns webpack when files are changed
+    webpack-cli - Allows running webpack from the command line
+
+    https://webpack.js.org/concepts/hot-module-replacement/
+
+4) npm i --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader
+    babel to use JSX
+    core - Babel compiler core
+    preset-env - allows to use latest JS ES code and transpiles to older browser compatible code
+    preset-react - transpiles JSX code
+        Includes @babel/plugin-syntax-jsx, @babel/plugin-transform-react-jsx, @babel/plugin-transform-react-display-name
+    babel-loader - connects babel to webpack. It allows transpiling JavaScript files using Babel and webpack.
+
+5) .babelrc
+    {
+        "presets": ["@babel/preset-env", "@babel/preset-react"]
+    }
+
+6) npm i --save-dev html-webpack-plugin
+    webpack.config.js
+        const HtmlWebpackPlugin = require("html-webpack-plugin");
+        const path = require("path");
+
+        module.exports = {
+          entry: "./src/index.js",
+          output: {
+            filename: "bundle.[hash].js",
+            path: path.resolve(__dirname, "dist"),
+          },
+          plugins: [
+            new HtmlWebpackPlugin({
+              template: "./src/index.html",
+            }),
+          ],
+          resolve: {
+            modules: [__dirname, "src", "node_modules"],
+            extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
+          },
+          module: {
+            rules: [
+              {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                loader: require.resolve("babel-loader"),
+              },
+              {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+              },
+              {
+                test: /\.png|svg|jpg|gif$/,
+                use: ["file-loader"],
+              },
+            ],
+          },
+        };
+
+7) src/index.js
+    import React from "react";
+    import ReactDOM from "react-dom";
+    import App from "./App";
+
+    ReactDOM.render(
+        <App />,
+      document.getElementById("root")
+    );
+
+8) src/index.html
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>React</title>
+      </head>
+      <body>
+        <div id="root"></div>
+      </body>
+    </html>
+
+9) src/components/App.js
+    import React from "react";
+
+    function App () {
+        return (
+            <>
+                <Components></Components>
+            </>
+        );
+    }
+
+    export default App;
+
+10) add scripts in package
+    webpack -
+    "scripts": {
+        "start": "webpack-dev-server --hot --open",
+        "build": "webpack --config webpack.config.js --mode production"
+    }
+    create-react-app -
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+      }
+
+11) npm i style-loader css-loader
+    import css
+
+12) npm i --dev file-loader

@@ -1,0 +1,23 @@
+/************************************************** Router *****************************************************/
+
+https://reactrouter.com/web/api/
+    Install -
+        "npm install --save react-router-dom"
+
+BrowserRouter
+    BrowserRouter is a router implementation that uses the HTML5 history API /(pushState, replaceState and the popstate event) to keep your UI in sync with the URL.
+    It is the parent component that is used to store all of the other components.
+
+MemoryRouter
+    MemoryRouter keeps the history of your “URL” in memory (does not read or write to the address bar).
+    Useful in tests and non-browser environments like React Native.
+
+HashRouter
+    HashRouter uses client-side hash routing.
+    It uses the hash portion of the URL (i.e. window.location.hash) to keep your UI in sync with the URL.
+    hashType - slash, noslash, hashbang
+
+Redirect
+    <Route exact path="/">
+        {loggedIn ? <Redirect to="/dashboard" /> : <PublicHomePage />}
+    </Route>

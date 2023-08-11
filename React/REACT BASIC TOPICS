@@ -1,0 +1,69 @@
+REACT BASICS -
+
+File & Folder structure
+Components
+JSX
+Props
+State
+Events
+Styling
+Conditional Rendering
+
+REACT HOOKS -
+
+useState
+useEffect
+useRef
+useContext
+useReducer
+useMemo
+useCallback
+
+REACT UI FRAMEWORKS -
+
+Material UI
+Ant Design
+Chakra UI
+
+REACT JS PACKAGES -
+
+React Router
+React Query
+Axios
+React Hook Form
+Styled Components
+Storybook
+Framer Motion
+
+STATE MANAGEMENT TOOLS -
+
+Redux
+
+NEXT AFTER REACT JS -
+
+Next JS
+Gatsby
+TypeScript
+
+TESTING FRAMEWORKS -
+
+Jest
+Testing Library
+
+REACT JS APPLICATIONS DEPLOY -
+
+Netlify
+Vercel
+
+Learn In React -
+
+- Create React App Command
+- Existing Toolchains
+- Next.js
+- Gatsby
+- Create Toolchain from Scratch
+- Adding React / JSX in HTML File Project
+- Functional Components
+- Different Patterns
+- State VS Stateless
+- Conditional Hooks in React
